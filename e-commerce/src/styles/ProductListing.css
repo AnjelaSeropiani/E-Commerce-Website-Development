@@ -1,0 +1,154 @@
+.product-listing {
+  padding: 80px 0;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.category-name {
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 103px;
+  color: #1D1F22;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(386px, 1fr));
+  gap: 40px;
+  row-gap: 103px;
+}
+
+.product-card {
+  position: relative;
+  padding: 16px;
+  transition: all 0.3s ease;
+  height: auto;
+  min-height: 500px;
+  cursor: pointer;
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+}
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.product-image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/4;
+  margin-bottom: 24px;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: 0 16px;
+}
+
+.product-name {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #1D1F22;
+}
+
+.product-price {
+  font-weight: 500;
+  font-size: 18px;
+  color: #1D1F22;
+}
+
+.out-of-stock {
+  opacity: 0.5;
+}
+
+.out-of-stock-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+  color: #8D8F9A;
+  text-transform: uppercase;
+}
+
+.new-label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #5ECE7B;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    row-gap: 60px;
+    padding: 0 16px;
+  }
+
+  .category-name {
+    font-size: 32px;
+    margin-bottom: 60px;
+    padding: 0 16px;
+  }
+
+  .product-card {
+    min-height: 400px;
+  }
+
+  .product-image-container {
+    aspect-ratio: 3/4;
+  }
+}
+
+/* New styles to show cart icon button only on hover */
+.add-to-cart-button1 {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background-color: #5ECE7B;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.product-card:hover .add-to-cart-button1 {
+  opacity: 1;
+  pointer-events: auto;
+}

@@ -1,0 +1,30 @@
+=======
+                            <p className="price">{convertAndFormatPrice(item.price, selectedCurrency)}</p>
+>>>>>>> REPLACE
+
+<<<<<<< SEARCH
+                        <div className="subtotal">
+                            <span>Subtotal</span>
+                            <span>$ {subtotal.toFixed(2)}</span>
+                        </div>
+                        <div className="shipping">
+                            <span>Shipping</span>
+                            <span>Free Shipping</span>
+                        </div>
+                        <div className="total">
+                            <span>Total</span>
+                            <span>$ {subtotal.toFixed(2)}</span>
+                        </div>
+=======
+                        <div className="subtotal">
+                            <span>Subtotal</span>
+                            <span>{convertAndFormatPrice(subtotal, selectedCurrency)}</span>
+                        </div>
+                        <div className="shipping">
+                            <span>Shipping</span>
+                            <span>Free Shipping</span>
+                        </div>
+                        <div className="total">
+                            <span>Total</span>
+                            <span>{convertAndFormatPrice(subtotal, selectedCurrency)}</span>
+                        </div>

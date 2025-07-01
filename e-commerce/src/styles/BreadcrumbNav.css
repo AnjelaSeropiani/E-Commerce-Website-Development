@@ -1,0 +1,36 @@
+.breadcrumb-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 48px;
+    color: #1D1F22;
+}
+
+.breadcrumb-link {
+    text-decoration: none;
+    color: #1D1F22;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.breadcrumb-link:hover {
+    color: #5ECE7B;
+}
+
+.breadcrumb-link.active {
+    color: #5ECE7B;
+    font-weight: 600;
+}
+
+.separator {
+    color: #1D1F22;
+    font-size: 14px;
+    margin: 0 4px;
+}
+
+.disabled {
+    color: #A6A6A6;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: not-allowed;
+} 

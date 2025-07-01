@@ -1,0 +1,153 @@
+.cart-overlay {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 360px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  z-index: 1000;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.cart-overlay-header {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.cart-overlay-items {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+.cart-overlay-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.cart-overlay-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cart-overlay-item-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1d1f22;
+}
+
+.cart-overlay-item-price {
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #1d1f22;
+}
+
+.size-options {
+  display: flex;
+  gap: 6px;
+}
+
+.size-button {
+  border: 1px solid #1d1f22;
+  background-color: white;
+  color: #1d1f22;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: default;
+  user-select: none;
+  border-radius: 2px;
+}
+
+.size-button.selected {
+  background-color: #1d1f22;
+  color: white;
+}
+
+.cart-overlay-item-quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.quantity-button {
+  background: none;
+  border: 1px solid #1d1f22;
+  width: 24px;
+  height: 24px;
+  font-size: 18px;
+  line-height: 18px;
+  cursor: pointer;
+  margin: 2px 0;
+  border-radius: 2px;
+  user-select: none;
+}
+
+.quantity-button:hover {
+  background-color: #f0f0f0;
+}
+
+.cart-overlay-item-image {
+  width: 105px;
+  height: 137px;
+  object-fit: cover;
+  border-radius: 0;
+  margin-left: 10px;
+}
+
+.cart-overlay-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #1d1f22;
+}
+
+.cart-overlay-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.view-bag-button,
+.checkout-button {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 2px;
+  font-size: 14px;
+  user-select: none;
+}
+
+.view-bag-button {
+  background-color: white;
+  border: 1px solid #1d1f22;
+  margin-right: 10px;
+  color: #1d1f22;
+}
+
+.view-bag-button:hover {
+  background-color: #f0f0f0;
+}
+
+.checkout-button {
+  background-color: #5ece7b;
+  color: white;
+}
+
+.checkout-button:hover {
+  background-color: #4caf68;
+}

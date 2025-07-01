@@ -1,0 +1,158 @@
+.cart-page {
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 80px auto 40px;
+}
+
+.cart-page-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 55px;
+  text-transform: uppercase;
+}
+
+.cart-page-empty {
+  text-align: center;
+  font-size: 24px;
+  color: #1D1F22;
+  padding: 40px;
+}
+
+.cart-page-items {
+  margin-bottom: 32px;
+}
+
+.cart-page-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.cart-page-item-info {
+  flex: 1;
+}
+
+.cart-page-item-brand {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1D1F22;
+}
+
+.cart-page-item-name {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #1D1F22;
+}
+
+.cart-page-item-price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1D1F22;
+}
+
+.cart-page-item-attributes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cart-page-item-attributes > div:first-child {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #1D1F22;
+}
+
+.size-selector {
+  display: flex;
+  gap: 8px;
+}
+
+.size-button {
+  min-width: 63px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1D1F22;
+  background: white;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  cursor: pointer;
+}
+
+.size-button.selected {
+  background: #1D1F22;
+  color: white;
+}
+
+.cart-page-item-quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 24px;
+  height: 288px;
+}
+
+.cart-page-quantity-button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1D1F22;
+  background: white;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.cart-page-item-quantity span {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.cart-page-item-image {
+  width: 200px;
+  height: 288px;
+  object-fit: cover;
+}
+
+.cart-page-total {
+  max-width: 279px;
+  margin-left: auto;
+  margin-top: 32px;
+}
+
+.cart-page-total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 24px;
+  color: #1D1F22;
+}
+
+.cart-page-total-label {
+  font-weight: 400;
+}
+
+.cart-page-total-value {
+  font-weight: 700;
+}
+
+.cart-page-order-button {
+  width: 100%;
+  padding: 16px;
+  text-transform: uppercase;
+  background: #5ECE7B;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 16px;
+} 
